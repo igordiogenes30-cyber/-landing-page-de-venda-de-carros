@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velocity Motors — Seu próximo carro está aqui</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="car" viewBox="0 0 320 120">
+    <path d="M20 84c0-10 6-16 16-18l34-8 30-26c4-4 9-6 15-6h86c8 0 15 3 21 8l32 24 40 6c10 2 16 9 16 18v8c0 4-3 7-7 7h-18a30 30 0 0 0-58 0H119a30 30 0 0 0-58 0H27c-4 0-7-3-7-7z" fill="var(--car,#e63946)"/>
+    <path d="M110 58l22-20h78l28 20z" fill="#000" opacity=".28"/>
+    <circle cx="90" cy="98" r="22" fill="#10121a"/><circle cx="90" cy="98" r="9" fill="#9aa2b8"/>
+    <circle cx="240" cy="98" r="22" fill="#10121a"/><circle cx="240" cy="98" r="9" fill="#9aa2b8"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Velocity<span>.</span>Motors</a>
+    <nav class="links"><a href="#modelos">Modelos</a><a href="#vantagens">Vantagens</a><a href="#contato">Contato</a></nav>
+    <button class="toggle" id="themeBtn" aria-label="Alternar modo escuro"><span id="themeIcon">🌙</span><span id="themeLabel">Modo escuro</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag">Feirão de Outubro</span>
+        <h1>O carro dos seus sonhos, a um test drive de distância.</h1>
+        <p>Seminovos e zero km com garantia, procedência verificada e as melhores condições de financiamento.</p>
+        <div class="actions">
+          <a class="btn" href="#modelos">Ver modelos</a>
+          <a class="btn ghost" href="#contato">Agendar test drive</a>
+        </div>
+        <div class="stats">
+          <div><b>+2.500</b><span>carros vendidos</span></div>
+          <div><b>12 meses</b><span>de garantia</span></div>
+          <div><b>4,9★</b><span>avaliação</span></div>
+        </div>
+      </div>
+      <svg viewBox="0 0 320 120" role="img" aria-label="Carro esportivo" style="--car:var(--accent);width:100%"><use href="#car"/></svg>
+    </div>
+  </div>
+
+  <section id="modelos">
+    <div class="wrap">
+      <h2>Modelos em destaque</h2>
+      <p class="sub">Escolha o seu e fale com um consultor.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="img"><svg viewBox="0 0 320 120" style="--car:#e63946"><use href="#car"/></svg></div>
+          <div class="body"><h3>Volt Sport GT</h3><div class="price">R$ 189.900</div>
+            <ul><li>• 2.0 Turbo • 240 cv</li><li>• Câmbio automático 8 marchas</li><li>• Garantia de fábrica</li></ul>
+            <a class="btn" href="#contato">Tenho interesse</a></div>
+        </article>
+        <article class="card">
+          <div class="img"><svg viewBox="0 0 320 120" style="--car:#2a6df4"><use href="#car"/></svg></div>
+          <div class="body"><h3>Aero Híbrido</h3><div class="price">R$ 156.500</div>
+            <ul><li>• Híbrido • 24 km/l</li><li>• Central multimídia 12"</li><li>• 6 airbags</li></ul>
+            <a class="btn" href="#contato">Tenho interesse</a></div>
+        </article>
+        <article class="card">
+          <div class="img"><svg viewBox="0 0 320 120" style="--car:#f4a62a"><use href="#car"/></svg></div>
+          <div class="body"><h3>Urban Flex</h3><div class="price">R$ 89.990</div>
+            <ul><li>• 1.0 Flex • econômico</li><li>• Ar-condicionado digital</li><li>• Ideal para a cidade</li></ul>
+            <a class="btn" href="#contato">Tenho interesse</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="vantagens" style="padding-top:0">
+    <div class="wrap">
+      <h2>Por que comprar com a gente</h2>
+      <p class="sub">Compra segura do início ao fim.</p>
+      <div class="grid">
+        <div class="feat"><div class="ic">🛡️</div><h3>Garantia estendida</h3><p>Cobertura de 12 meses em todos os veículos.</p></div>
+        <div class="feat"><div class="ic">💳</div><h3>Financiamento facilitado</h3><p>Aprovação rápida e parcelas que cabem no bolso.</p></div>
+        <div class="feat"><div class="ic">🔍</div><h3>Laudo cautelar</h3><p>Procedência verificada e histórico transparente.</p></div>
+        <div class="feat"><div class="ic">🔄</div><h3>Aceitamos seu usado</h3><p>Avaliação justa e troca na hora.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Pronto para dar a partida?</h2>
+        <p class="sub">Agende um test drive e receba uma proposta personalizada.</p>
+        <button class="btn" id="ctaBtn">Agendar test drive</button>
+        <p id="ctaMsg" class="sub" style="margin:16px 0 0"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Velocity Motors · Todos os direitos reservados</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
